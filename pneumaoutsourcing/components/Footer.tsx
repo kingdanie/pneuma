@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-        <>
-            <h2>Footer</h2>
-        </>
+        <div style={{padding: 20}}>
+            <span>© Pneuma Outsourcing {new Date().getFullYear()}. All Rights Reserved.</span>
+        </div>
     )
 }
