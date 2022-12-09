@@ -26,6 +26,10 @@ body {
   margin: 0;
 }
 
+p{
+  line-height: 1.7;
+}
+
 /* h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   margin-top: 6rem;
   margin-bottom: 1.8rem;
@@ -55,13 +59,7 @@ h1, .h1 {
   letter-spacing: -.1rem;
 }
 
-@media only screen and (max-width:600px) {
-  h1, .h1 {
-    font-size: 3.3rem;
-    letter-spacing: -.07rem;
-  }
 
-}
 
 h2, .h2 {
   font-size: 3rem;
@@ -90,11 +88,48 @@ h6, .h6 {
   letter-spacing: .16rem;
 }
 
+@media only screen and (max-width:600px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+    letter-spacing: -.07rem;
+  }
+  h2, .h2 {
+    font-size: 2.0rem;
+    line-height: 1.1;
+  }
+  
+  h3, .h3 {
+    font-size: 1.6rem;
+    line-height: 1.1;
+  }
+  
+  h4, .h4 {
+    font-size: 1.4rem;
+    line-height: 1.286;
+  }
+  
+  h5, .h5 {
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
+  
+  h6, .h6 {
+    font-size: 1.0rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: .16rem;
+  }
+  
+
+}
+
 .p-flex{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 4em;
 }
+
 
 section {
   max-width: 1280px;
@@ -130,6 +165,23 @@ section {
 }
 .hero-info{
   max-width: 100%;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .w-45{
+    width: 45%;
+  }
+  
+  .w-55 {
+    width: 55%;
+  }  
+}
+
+@media screen and (max-width: 960px){
+
+.col-reverse{
+  flex-direction: column-reverse;
 }
 }
 
@@ -181,7 +233,19 @@ section {
 }
 
 .services-card h3 {
-  color: var(--brand-color-dark);
+  /* color: var(--brand-color-dark); */
+  font-family: "metropolis-medium", sans-serif;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* background: linear-gradient(60deg, red, yellow, red, yellow, red); */
+  background: linear-gradient(45deg, #c8e9ff, #0095f9);
+  /* background: radial-gradient( circle farthest-corner at center center, white, #111 ) no-repeat; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-image img {
+  object-fit: cover;
 }
 
 
@@ -249,6 +313,8 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+
 
 * {
   box-sizing: border-box;
