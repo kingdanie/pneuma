@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+import { ContactCard } from "../components/ContactCard";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -215,7 +217,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-45">
-            <h3>Business Consultancy</h3>
+            <h3>HR Outsourcing</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur
               adipisicing elit. Saepe, velit laborum odio
@@ -226,28 +228,22 @@ export default function Home() {
             </p>
           </div>
         </div>
+        <div className="services-card" style={{display: 'flex', flexDirection:'column',
+    alignItems: 'center', marginTop: '10em'}}>
+          <h3>More Services</h3>
+          <p>For a comprehensive details of the services we offer, kindly click on the click below</p>
+          <button>
+            <Link href={'/services'}>
+            See All Our Services
+          </Link>
+          </button>
+        </div>
       </section>
 
+
       {/* Contact Section  */}
-      <section className="contact-section p-flex Width-1040">
-        <div className="w-45">
-          <p className="subtitle">Contact</p>
-          <h2>
-            Reliable Outsourcing for your business needs
-          </h2>
-          <p>
-            Reach to out to us for inquiries, appointments
-            or consultancy
-          </p>
-          <button>Contact Us</button>
-        </div>
-        <div
-          className="image-container"
-          style={{ borderRadius: "50%" }}
-        >
-          <img src="/hr.jpg" width="350px" height="350px" />
-        </div>
-      </section>
+      <ContactCard />
+  
 
       {/* <main className={styles.main}>
         <h1 className={styles.title}>
