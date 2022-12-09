@@ -30,27 +30,45 @@ export default function Home() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          background: "#efefef",
+          // background: "#efefef",
           padding: 50,
         }}
       >
-        <div>
-          <p>Welcome to Pneuma Outsourcing ltd</p>
-          <h1>Reliable HR Outsourcing for your business</h1>
+        <div style={{maxWidth: '60vw'}}>
+          <p className="subtitle">Pneuma Outsourcing ltd</p>
+          <h1>Reliable Human Resource and Talent Management for your business</h1>
           <p>
             We empower our clients to make the right
             decisions about their people so their businesses
             can thrive.{" "}
           </p>
-          <button>Schedule an appointment</button>
+          <button
+            style={{ background: '#008aec', borderColor: '#008aec', 
+            }}
+          >
+            Schedule an appointment
+          </button>
         </div>
-        <div>
-          <Image
-            src={"/pneuma1.png"}
+        <div className="">
+          <img style={{borderRadius: '50%', width: '400px', height: '400px'}}
+            src="/suit.jpeg"
             alt="why us"
-            width={"450"}
-            height={350}
+            width="auto"
+            height="auto"
           />
+        </div>
+      </section>
+
+      <section className="Width-1040">
+        <p className="subtitle">A Brief Introduction</p>
+        <h2>Pneuma is a leader in employment law for employers, HR outsourcing support,
+           and health and safety consulting.
+        </h2>
+
+        <div className="About-Cards">
+              <div>Reliable</div>
+              <div>Strong</div>
+              <div>Commited</div>
         </div>
       </section>
 
@@ -105,7 +123,7 @@ export default function Home() {
         style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
-          background: "#efefef",
+          // background: "#efefef",
           padding: 50,
         }}
       >
