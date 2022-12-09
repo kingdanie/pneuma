@@ -129,6 +129,13 @@ h6, .h6 {
   align-items: center;
   gap: 4em;
 }
+.p-flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4em;
+}
 
 
 section {
@@ -277,7 +284,8 @@ button {
     background: var(--brand-color);
     border-color: #008aec; 
     border: 0.2rem solid;
-    text-transform: uppercase
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .subtitle {
