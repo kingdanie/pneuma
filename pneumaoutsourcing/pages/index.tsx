@@ -28,7 +28,7 @@ export default function Home() {
         className="p-flex  Width-1040"
         style={{
           // background: "#efefef",
-          position: 'relative',
+          position: "relative",
           padding: 50,
         }}
       >
@@ -65,7 +65,8 @@ export default function Home() {
           />
         </div>
       </section>
-      
+
+      {/* About section */}
       <section className="about-section Width-1040">
         <p className="subtitle">Introduction</p>
         <h2>
@@ -105,226 +106,150 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* Services section */}
-      <section className="about-section Width-1040">
-      <p className="subtitle">Services</p>
+      <section className="service-section Width-1040">
+        <p className="subtitle">Services</p>
         <h2>
-        We have strategically positioned our services to tackle the most challenging 
-        touch points currently facing businesses. Here are a few:
+          We have strategically positioned our services to
+          tackle the most challenging touch points currently
+          facing businesses. Here are a few:
         </h2>
         <div className="p-flex services-card">
-          <div>
-              <h3>
-                Talent Management
-              </h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, velit laborum odio ullam illo doloribus esse, 
-                nobis eum vero inventore earum recusandae dolorum, incidunt unde excepturi eligendi ab ducimus praesentium.
-              </p>
+          <div className="w-45">
+            <h3>Talent Management</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Saepe, velit laborum odio
+              ullam illo doloribus esse, nobis eum vero
+              inventore earum recusandae dolorum, incidunt
+              unde excepturi eligendi ab ducimus
+              praesentium.
+            </p>
           </div>
           <div>
-          <div className="hero-image">
-          <img
-            style={{
-              borderRadius: "50%",
-              width: "300px",
-              height: "300px",
-            }}
-            src="/suit.jpeg"
-            alt="why us"
-            width="auto"
-            height="auto"
-          />
-        </div>
+            <div className="service-image">
+              <img
+                style={{
+                  borderRadius: "50%",
+                  width: "300px",
+                  height: "300px",
+                }}
+                src="/talent.jpeg"
+                alt="why us"
+                width="auto"
+                height="auto"
+              />
+            </div>
           </div>
         </div>
-        <div className="p-flex services-card">
-       
+        <div className="p-flex col-reverse services-card">
           <div>
-          <div className="hero-image">
-          <img
-            style={{
-              borderRadius: "50%",
-              width: "300px",
-              height: "300px",
-            }}
-            src="/business-consultancy.jpg"
-            alt="why us"
-            width="auto"
-            height="auto"
-          />
-        </div>
+            <div className="service-image">
+              <img
+                style={{
+                  borderRadius: "50%",
+                  width: "300px",
+                  height: "300px",
+                }}
+                src="/business-consultancy.jpg"
+                alt="why us"
+                width="auto"
+                height="auto"
+              />
+            </div>
           </div>
-          <div>
-              <h3>
-                Business Consultancy
-              </h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, velit laborum odio ullam illo doloribus esse, 
-                nobis eum vero inventore earum recusandae dolorum, incidunt unde excepturi eligendi ab ducimus praesentium.
-              </p>
-          </div>
-        </div>
-        <div className="p-flex services-card">
-          <div>
-              <h3>
-                HR Outsourcing
-              </h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, velit laborum odio ullam illo doloribus esse, 
-                nobis eum vero inventore earum recusandae dolorum, incidunt unde excepturi eligendi ab ducimus praesentium.
-              </p>
-          </div>
-          <div>
-          <div className="hero-image">
-          <img
-            style={{
-              borderRadius: "50%",
-              width: "300px",
-              height: "300px",
-            }}
-            src="/hr-smile.jpeg"
-            alt="why us"
-            width="auto"
-            height="auto"
-          />
-        </div>
+          <div className="w-45">
+            <h3>Business Consultancy</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Saepe, velit laborum odio
+              ullam illo doloribus esse, nobis eum vero
+              inventore earum recusandae dolorum, incidunt
+              unde excepturi eligendi ab ducimus
+              praesentium.
+            </p>
           </div>
         </div>
         <div className="p-flex services-card">
-       
-       <div>
-       <div className="hero-image">
-       <img
-         style={{
-           borderRadius: "50%",
-           width: "300px",
-           height: "300px",
-         }}
-         src="/outsourcing.jpeg"
-         alt="why us"
-         width="auto"
-         height="auto"
-       />
-     </div>
-       </div>
-       <div>
-           <h3>
-             Business Consultancy
-           </h3>
-           <p>
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, velit laborum odio ullam illo doloribus esse, 
-             nobis eum vero inventore earum recusandae dolorum, incidunt unde excepturi eligendi ab ducimus praesentium.
-           </p>
-       </div>
-     </div>
+          <div className="w-45">
+            <h3>HR Outsourcing</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Saepe, velit laborum odio
+              ullam illo doloribus esse, nobis eum vero
+              inventore earum recusandae dolorum, incidunt
+              unde excepturi eligendi ab ducimus
+              praesentium.
+            </p>
+          </div>
+          <div>
+            <div className="service-image">
+              <img
+                style={{
+                  borderRadius: "50%",
+                  width: "300px",
+                  height: "300px",
+                }}
+                src="/hr-smile.jpeg"
+                alt="why us"
+                width="auto"
+                height="auto"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="p-flex col-reverse services-card">
+          <div>
+            <div className="service-image">
+              <img
+                style={{
+                  borderRadius: "50%",
+                  width: "300px",
+                  height: "300px",
+                }}
+                src="/outsourcing.jpg"
+                alt="why us"
+                width="auto"
+                height="auto"
+              />
+            </div>
+          </div>
+          <div className="w-45">
+            <h3>Business Consultancy</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Saepe, velit laborum odio
+              ullam illo doloribus esse, nobis eum vero
+              inventore earum recusandae dolorum, incidunt
+              unde excepturi eligendi ab ducimus
+              praesentium.
+            </p>
+          </div>
+        </div>
       </section>
 
-        {/* Contact Section  */}
+      {/* Contact Section  */}
       <section className="contact-section p-flex Width-1040">
-          <div>
-            <h2>Reliable Outsourcing for your business needs</h2>
-            <p>Reach to out to us for inquiries, appointments or consultancy</p>
-            <button>Contact Us</button>
-          </div>
-          <div className="image-container" style={{borderRadius: '50%',}}>
-            <img src="/hr.jpg" width="350px" height="350px" />
-          </div>
-
-      </section>
-      {/* About section */}
-      <section
-        className="p-flex"
-        style={{
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: 50,
-        }}
-      >
-        <div>
-          <h2>Why Pneuma</h2>
-          <hr />
-          <p>
-            Pneuma is a leader in employment law for
-            employers, HR outsourcing support, and health
-            and safety consulting. Quintessentially
-            different, we uniquely offer designated
-            specialists and bespoke service to every
-            business.
-          </p>
-          <p>
-            Your specialist will be an expert in your
-            sector. Always at your side, they will
-            seamlessly help you navigate all of your HR and
-            H&S challenges. Available 24/7, you can contact
-            us whenever you need to and we’ll immediately
-            help relieve any problems you are facing.
-          </p>
-          <p>
-            Through our 360 solution, you will have complete
-            peace of mind that your business is fully
-            protected and always compliant with UK law. You
-            can also enhance and future-proof your HR and
-            H&S through our innovate software solutions
-          </p>
-        </div>
-        <div style={{ border: "solid 3px blue" }}>
-          <Image
-            src={"/pneuma1.png"}
-            alt="why us"
-            width={"350"}
-            height={250}
-          />
-        </div>
-      </section>
-
-     
-      <section
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          // background: "#efefef",
-          padding: 50,
-        }}
-      >
-        <div style={{ border: "solid 3px blue" }}>{""}</div>
-        <div>
+        <div className="w-45">
+          <p className="subtitle">Contact</p>
           <h2>
-            Why Are Our Services So Important To Nigerian
-            Business?
+            Reliable Outsourcing for your business needs
           </h2>
-          <hr />
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-            }}
-          >
-            {[1, 2, 3, 4].map((item) => (
-              <div key={item}>
-                <h3>Hello</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur,
-                  adipisicing elit. Animi aut porro quas eum
-                  quod omnis molestiae ipsum repellendus
-                  illum qui.
-                </p>
-              </div>
-            ))}
-          </div>
+          <p>
+            Reach to out to us for inquiries, appointments
+            or consultancy
+          </p>
+          <button>Contact Us</button>
+        </div>
+        <div
+          className="image-container"
+          style={{ borderRadius: "50%" }}
+        >
+          <img src="/hr.jpg" width="350px" height="350px" />
         </div>
       </section>
 
-      
-      <section style={pad}>
-        <form style={flex}>
-          <input type="text" placeholder="Your name" />
-          <textarea placeholder="Your message"></textarea>
-          <button>Submit</button>
-        </form>
-      </section>
-      <main className={styles.main}>
+      {/* <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="/about">Next.js!</a>
         </h1>
@@ -374,9 +299,9 @@ export default function Home() {
             </p>
           </a>
         </div>
-      </main>
+      </main> */}
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -392,7 +317,7 @@ export default function Home() {
             />
           </span>
         </a>
-      </footer>
+      </footer> */}
     </div>
   );
 }
