@@ -3,15 +3,14 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-
   const pad = {
-    padding: '50px'
-  }
+    padding: "50px",
+  };
 
   const flex = {
-    display: 'flex',
-    flexDirection: 'column',
-  }
+    display: "flex",
+    flexDirection: "column",
+  };
 
   return (
     <div>
@@ -26,31 +25,39 @@ export default function Home() {
 
       {/* Hero section */}
       <section
+        className="p-flex  Width-1040"
         style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
           // background: "#efefef",
+          position: 'relative',
           padding: 50,
         }}
       >
-        <div style={{maxWidth: '60vw'}}>
+        <div className="hero-info">
           <p className="subtitle">Pneuma Outsourcing ltd</p>
-          <h1>Reliable Human Resource and Talent Management for your business</h1>
+          <h1>
+            Reliable Human Resource and Talent Management
+          </h1>
           <p>
             We empower our clients to make the right
             decisions about their people so their businesses
             can thrive.{" "}
           </p>
           <button
-            style={{ background: '#008aec', borderColor: '#008aec', 
+            style={{
+              background: "#008aec",
+              borderColor: "#008aec",
             }}
           >
             Schedule an appointment
           </button>
         </div>
-        <div className="">
-          <img style={{borderRadius: '50%', width: '400px', height: '400px'}}
+        <div className="hero-image">
+          <img
+            style={{
+              borderRadius: "50%",
+              width: "400px",
+              height: "400px",
+            }}
             src="/suit.jpeg"
             alt="why us"
             width="auto"
@@ -58,24 +65,178 @@ export default function Home() {
           />
         </div>
       </section>
-
-      <section className="Width-1040">
-        <p className="subtitle">A Brief Introduction</p>
-        <h2>Pneuma is a leader in employment law for employers, HR outsourcing support,
-           and health and safety consulting.
+      
+      <section className="about-section Width-1040">
+        <p className="subtitle">Introduction</p>
+        <h2>
+          Pneuma is a leader in employment law for
+          employers, HR outsourcing support, and health and
+          safety consulting.
         </h2>
 
         <div className="About-Cards">
-              <div>Reliable</div>
-              <div>Strong</div>
-              <div>Commited</div>
+          <div className="p-card">
+            <div className="card-icons">
+              <img src="/compliance.svg" width="30px" />
+            </div>
+            Business compliancy
+          </div>
+
+          <div className="p-card">
+            <div className="card-icons">
+              <img src="/productivity.svg" width="35px" />
+            </div>
+            Increased productivity
+          </div>
+
+          <div className="p-card">
+            <div className="card-icons">
+              <img src="/time-is-money.svg" width="35px" />
+            </div>
+            Increased productivity
+          </div>
+
+          <div className="p-card">
+            <div className="card-icons">
+              <img src="/financial.svg" width="35px" />
+            </div>
+            Financial security
+          </div>
         </div>
       </section>
 
+
+      {/* Services section */}
+      <section className="about-section Width-1040">
+      <p className="subtitle">Services</p>
+        <h2>
+        We have strategically positioned our services to tackle the most challenging 
+        touch points currently facing businesses. Here are a few:
+        </h2>
+        <div className="p-flex services-card">
+          <div>
+              <h3>
+                Talent Management
+              </h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, velit laborum odio ullam illo doloribus esse, 
+                nobis eum vero inventore earum recusandae dolorum, incidunt unde excepturi eligendi ab ducimus praesentium.
+              </p>
+          </div>
+          <div>
+          <div className="hero-image">
+          <img
+            style={{
+              borderRadius: "50%",
+              width: "300px",
+              height: "300px",
+            }}
+            src="/suit.jpeg"
+            alt="why us"
+            width="auto"
+            height="auto"
+          />
+        </div>
+          </div>
+        </div>
+        <div className="p-flex services-card">
+       
+          <div>
+          <div className="hero-image">
+          <img
+            style={{
+              borderRadius: "50%",
+              width: "300px",
+              height: "300px",
+            }}
+            src="/business-consultancy.jpg"
+            alt="why us"
+            width="auto"
+            height="auto"
+          />
+        </div>
+          </div>
+          <div>
+              <h3>
+                Business Consultancy
+              </h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, velit laborum odio ullam illo doloribus esse, 
+                nobis eum vero inventore earum recusandae dolorum, incidunt unde excepturi eligendi ab ducimus praesentium.
+              </p>
+          </div>
+        </div>
+        <div className="p-flex services-card">
+          <div>
+              <h3>
+                HR Outsourcing
+              </h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, velit laborum odio ullam illo doloribus esse, 
+                nobis eum vero inventore earum recusandae dolorum, incidunt unde excepturi eligendi ab ducimus praesentium.
+              </p>
+          </div>
+          <div>
+          <div className="hero-image">
+          <img
+            style={{
+              borderRadius: "50%",
+              width: "300px",
+              height: "300px",
+            }}
+            src="/hr-smile.jpeg"
+            alt="why us"
+            width="auto"
+            height="auto"
+          />
+        </div>
+          </div>
+        </div>
+        <div className="p-flex services-card">
+       
+       <div>
+       <div className="hero-image">
+       <img
+         style={{
+           borderRadius: "50%",
+           width: "300px",
+           height: "300px",
+         }}
+         src="/outsourcing.jpeg"
+         alt="why us"
+         width="auto"
+         height="auto"
+       />
+     </div>
+       </div>
+       <div>
+           <h3>
+             Business Consultancy
+           </h3>
+           <p>
+             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, velit laborum odio ullam illo doloribus esse, 
+             nobis eum vero inventore earum recusandae dolorum, incidunt unde excepturi eligendi ab ducimus praesentium.
+           </p>
+       </div>
+     </div>
+      </section>
+
+        {/* Contact Section  */}
+      <section className="contact-section p-flex Width-1040">
+          <div>
+            <h2>Reliable Outsourcing for your business needs</h2>
+            <p>Reach to out to us for inquiries, appointments or consultancy</p>
+            <button>Contact Us</button>
+          </div>
+          <div className="image-container" style={{borderRadius: '50%',}}>
+            <img src="/hr.jpg" width="350px" height="350px" />
+          </div>
+
+      </section>
       {/* About section */}
       <section
+        className="p-flex"
         style={{
-          display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
           padding: 50,
@@ -118,7 +279,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services section */}
+     
       <section
         style={{
           display: "grid",
@@ -155,15 +316,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section  */}
+      
       <section style={pad}>
-
         <form style={flex}>
-          <input type="text" placeholder="Your name"/>
-          <textarea  placeholder="Your message"></textarea>
+          <input type="text" placeholder="Your name" />
+          <textarea placeholder="Your message"></textarea>
           <button>Submit</button>
         </form>
-
       </section>
       <main className={styles.main}>
         <h1 className={styles.title}>
