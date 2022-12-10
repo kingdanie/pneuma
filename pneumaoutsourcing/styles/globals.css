@@ -217,6 +217,9 @@ display: flex;
 }
 }
 
+
+
+
 .About-Cards {
   display: grid;
     gap: 2em;
@@ -264,7 +267,7 @@ display: flex;
   margin: 100px auto;
 }
 
-.services-card h3 {
+.services-card h3, .colored-text  {
   /* color: var(--brand-color-dark); */
   font-family: "metropolis-medium", sans-serif;
   font-weight: bold;
@@ -339,7 +342,9 @@ button {
 }
 
 
-
+.about-image img, .service-image img {
+  object-fit: cover;
+}
 
 button:hover {
   background-color: var(--brand-color-dark);
@@ -797,10 +802,10 @@ a {
   .About-Cards .p-card{
     color: var(--brand-color);
   }
-  .services-card h3{
+  .services-card h3, .colored-text {
     color: var(--brand-color)
   }
-  .services-card h3 {
+  .services-card h3, .colored-text  {
     /* color: var(--brand-color-dark); */
     background: linear-gradient(45deg, #c8e9ff, #0095f9);
     -webkit-text-fill-color: transparent;
