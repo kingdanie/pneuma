@@ -12,11 +12,11 @@ export const ContactCard = () => {
             Reach to out to us for inquiries, appointments
             or consultancy
           </p>
-          <button>
             <Link href={'/contact'}>
+          <button>
             Contact Us
-            </Link>
            </button>
+            </Link>
         </div>
         <div
           className="image-container"
