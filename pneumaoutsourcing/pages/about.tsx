@@ -126,11 +126,11 @@ export default function About() {
       <section className="about-section Width-1040">
         <h2 className="colored-text" style={{marginBottom: '1em'}}>Take Action Now!</h2>
         <h3>
-          Whether you're looking to streamline your HR
+          Whether you&apos;re looking to streamline your HR
           processes, improve employee satisfaction, or
           reduce HR costs, our HR outsourcing services can
           help. Contact us today to learn more and schedule
-          a consultation. We're ready to help your business
+          a consultation. We&apos;re ready to help your business
           succeed.
         </h3>
       </section>

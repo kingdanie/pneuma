@@ -27,9 +27,9 @@ export default function About() {
           and how we can help your business achieve its
           goals. Our team of experienced professionals is
           ready to assist you with all of your business
-          needs. Whether you're looking for advice on
+          needs. Whether you&apos;re looking for advice on
           strategic planning, help with market analysis, or
-          support with organizational development, we're
+          support with organizational development, we&apos;re
           here to help. We offer a range of <Link href={'/services'}>services</Link> and
           will work with you to develop a customized plan
           that meets your unique needs. Contact us now to
@@ -64,8 +64,6 @@ export default function About() {
               <textarea
                 name="mesage"
                 id=""
-                cols="30"
-                rows="10"
               ></textarea>
             </div>
             <div>

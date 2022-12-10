@@ -55,7 +55,7 @@ export default function Services() {
           work with you to understand your unique business
           needs and develop a customized consultancy plan
           that will help you achieve your goals. Whether
-          you're looking to grow your business, increase
+          you&apos;re looking to grow your business, increase
           profitability, or improve your operations, our
           business consultancy services can help. Contact us
           today to learn more and schedule a consultation
@@ -78,7 +78,7 @@ export default function Services() {
           compliance. Our experienced team will work with
           you to understand your unique business needs and
           develop a customized HR outsourcing plan that will
-          help you achieve your goals. Whether you're
+          help you achieve your goals. Whether you&apos;re
           looking to streamline your HR processes, improve
           employee satisfaction, or reduce HR costs, our HR
           outsourcing services can help. Contact us today to
@@ -102,7 +102,7 @@ export default function Services() {
           compliance. Our experienced team will work with
           you to understand your unique business needs and
           develop a customized HR outsourcing plan that will
-          help you achieve your goals. Whether you're
+          help you achieve your goals. Whether you&apos;re
           looking to streamline your HR processes, improve
           employee satisfaction, or reduce HR costs, our HR
           outsourcing services can help. Contact us today to
@@ -125,7 +125,7 @@ export default function Services() {
           to understand your unique business needs and
           develop a customized coaching and training plan
           that will help you achieve your goals. Whether
-          you're looking to improve the skills of your
+          you&apos;re looking to improve the skills of your
           existing staff, train new employees, or develop
           your leadership team, our coaching and training
           services can help. Contact us today to learn more
