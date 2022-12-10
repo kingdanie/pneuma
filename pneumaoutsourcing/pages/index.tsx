@@ -217,7 +217,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-45">
-            <h3>HR Outsourcing</h3>
+            <h3>Coaching & Training</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur
               adipisicing elit. Saepe, velit laborum odio
@@ -232,11 +232,11 @@ export default function Home() {
     alignItems: 'center', marginTop: '10em'}}>
           <h3>More Services</h3>
           <p>For a comprehensive details of the services we offer, kindly click on the click below</p>
-          <button>
             <Link href={'/services'}>
+          <button>
             See All Our Services
-          </Link>
           </button>
+          </Link>
         </div>
       </section>
 
