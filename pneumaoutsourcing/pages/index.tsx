@@ -120,12 +120,11 @@ export default function Home() {
           <div className="w-45">
             <h3>Talent Management</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Saepe, velit laborum odio
-              ullam illo doloribus esse, nobis eum vero
-              inventore earum recusandae dolorum, incidunt
-              unde excepturi eligendi ab ducimus
-              praesentium.
+            Talent management is the process of identifying, developing, 
+            and retaining top employees to drive business forward. 
+            Our talent management solutions include acquisition, training, 
+            performance management, and succession planning. 
+            Contact us to learn more and schedule a consultation.
             </p>
           </div>
           <div>
@@ -163,12 +162,11 @@ export default function Home() {
           <div className="w-45">
             <h3>Business Consultancy</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Saepe, velit laborum odio
-              ullam illo doloribus esse, nobis eum vero
-              inventore earum recusandae dolorum, incidunt
-              unde excepturi eligendi ab ducimus
-              praesentium.
+            A business consultancy provides expert advice and assistance to businesses 
+            in order to help them improve operations and achieve goals. 
+            Our experienced team offers a range of services and develops 
+            customized plans to meet your unique needs. 
+            Contact us to learn more and schedule a consultation
             </p>
           </div>
         </div>
@@ -176,12 +174,11 @@ export default function Home() {
           <div className="w-45">
             <h3>HR Outsourcing</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Saepe, velit laborum odio
-              ullam illo doloribus esse, nobis eum vero
-              inventore earum recusandae dolorum, incidunt
-              unde excepturi eligendi ab ducimus
-              praesentium.
+            HR outsourcing is a cost-effective way for businesses to 
+            manage their human resources needs. 
+            Our HR outsourcing services include payroll, 
+            benefits administration, employee relations, and compliance. 
+            Contact us to learn more and schedule a consultation.
             </p>
           </div>
           <div>
@@ -219,12 +216,11 @@ export default function Home() {
           <div className="w-45">
             <h3>Coaching & Training</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Saepe, velit laborum odio
-              ullam illo doloribus esse, nobis eum vero
-              inventore earum recusandae dolorum, incidunt
-              unde excepturi eligendi ab ducimus
-              praesentium.
+            Coaching and training your staff is an important part of ensuring 
+            their success and the success of your business. 
+            Our services include leadership development, team building, 
+            and performance coaching. 
+            Contact us to learn more and schedule a consultation.
             </p>
           </div>
         </div>
