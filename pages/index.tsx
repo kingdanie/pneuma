@@ -113,8 +113,8 @@ export default function Home() {
         <p className="subtitle">Services</p>
         <h2>
           We have strategically positioned our services to
-          tackle the most challenging touch points currently
-          facing businesses. Here are a few:
+          tackle the most challenging touch points businesses
+          facing . Here are a few of them:
         </h2>
         <div className="p-flex services-card">
           <div className="w-45">
@@ -124,7 +124,7 @@ export default function Home() {
             and retaining top employees to drive business forward. 
             Our talent management solutions include acquisition, training, 
             performance management, and succession planning. 
-            Contact us to learn more and schedule a consultation.
+            <Link href={'/contact'}>Contact us to learn more</Link>.
             </p>
           </div>
           <div>
@@ -162,11 +162,11 @@ export default function Home() {
           <div className="w-45">
             <h3>Business Consultancy</h3>
             <p>
-            A business consultancy provides expert advice and assistance to businesses 
+            With business consultancy, we provide expert advice and assistance to businesses 
             in order to help them improve operations and achieve goals. 
             Our experienced team offers a range of services and develops 
             customized plans to meet your unique needs. 
-            Contact us to learn more and schedule a consultation
+            <Link href={'/contact'}>Schedule a consultation to learn more.</Link>
             </p>
           </div>
         </div>
@@ -178,7 +178,7 @@ export default function Home() {
             manage their human resources needs. 
             Our HR outsourcing services include payroll, 
             benefits administration, employee relations, and compliance. 
-            Contact us to learn more and schedule a consultation.
+            <Link href={'/services'}>Learn more or schedule a consultation.</Link>
             </p>
           </div>
           <div>
@@ -220,14 +220,14 @@ export default function Home() {
             their success and the success of your business. 
             Our services include leadership development, team building, 
             and performance coaching. 
-            Contact us to learn more and schedule a consultation.
+            <Link href={'/contact'}>Contact us to learn more and schedule a consultation.</Link>
             </p>
           </div>
         </div>
         <div className="services-card" style={{display: 'flex', flexDirection:'column',
     alignItems: 'center', marginTop: '10em'}}>
           <h3>More Services</h3>
-          <p>For a comprehensive details of the services we offer, kindly click on the click below</p>
+          <p>For comprehensive details on our service offerings, kindly click on button below</p>
             <Link href={'/services'}>
           <button>
             See All Our Services
