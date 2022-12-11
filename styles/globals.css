@@ -722,6 +722,9 @@ a {
   .s-info h1 {
     font-size: 4.2rem;
   }
+  .contact-section {
+    padding: 50px 10px;
+}
 
 }
 
