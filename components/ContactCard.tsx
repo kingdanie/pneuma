@@ -22,7 +22,7 @@ export const ContactCard = () => {
           className="image-container"
           
         >
-          <img src="/hr-400x400.jpg" width="350px" height="350px" />
+          <img src="/hr-400x400.jpg" width="auto" height="auto" />
         </div>
       </section>
     )
