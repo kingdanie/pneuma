@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import ContactForm from "../components/ContactForm";
 
 export default function About() {
   return (
@@ -37,6 +38,10 @@ export default function About() {
           towards improving your business.
         </p>
       </section>
+      <section className="Width-1040 ">
+      <ContactForm />
+
+      </section>
       <section className="Width-1040 p-flex"
         style={{
           alignItems: "center",
@@ -44,6 +49,7 @@ export default function About() {
           gap: 10,
         }}
       >
+
         <div style={{ width: "100%" }}>
       
           <div>Adress</div>

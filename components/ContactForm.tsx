@@ -13,7 +13,8 @@ export default function ContactForm() {
   return (
     <div>
       <form onSubmit={HandleSubmit}>
-        <div className="" style={{display: 'flex'}}>
+        <div className="form-grid">
+        <div className="first-form-col" style={{display: 'flex'}}>
           <div>
             <input 
                 type="text" 
@@ -43,12 +44,14 @@ export default function ContactForm() {
         </div>
         <div>
           <textarea 
+            className="form-textarea"
             name="mesage"
             value={message}
             onChange={(e) => setMessage(e.target.value)} 
             required
             >
             </textarea>
+        </div>
         </div>
         <div>
           <button>Submit</button>
