@@ -296,8 +296,8 @@ display: flex;
   border: 5px dotted #fff;
   box-sizing: border-box;
   display: flex;
-  min-width: 300px;
-  min-height: 300px;
+  min-width: 250px;
+  min-height: 250px;
 }
 
 .image-container img {
