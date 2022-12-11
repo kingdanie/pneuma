@@ -42,42 +42,6 @@ export default function About() {
       <ContactForm />
 
       </section>
-      <section className="Width-1040 p-flex"
-        style={{
-          alignItems: "center",
-          flex: "1 1 0px",
-          gap: 10,
-        }}
-      >
-
-        <div style={{ width: "100%" }}>
-      
-          <div>Adress</div>
-          <div>Phone</div>
-          <div>Social Media</div>
-        </div>
-        <div style={{ width: "100%" }}>
-          <form
-            style={{ background: "#efefef", padding: 25 }}
-          >
-            <div>
-              <input type="text" placeholder="your name" />
-            </div>
-            <div>
-              <input type="text" placeholder="your email" />
-            </div>
-            <div>
-              <textarea
-                name="mesage"
-                id=""
-              ></textarea>
-            </div>
-            <div>
-              <button>Submit</button>
-            </div>
-          </form>
-        </div>
-      </section>
     </>
   );
 }
