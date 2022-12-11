@@ -467,53 +467,10 @@ a {
 }
 
 .info-block {
-  margin-bottom: 4.5rem;
+  margin-bottom: 2rem;
 }
 
-.info-social {
-  list-style: none;
-  font-size: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
 
-.info-social:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.info-social li {
-  padding: .6rem 1.2rem .6rem 0;
-  line-height: 3rem;
-  width: 50%;
-  float: left;
-}
-
-.info-social a {
-  color: #FFFFFF;
-  border: none !important;
-}
-
-.info-social i {
-  font-size: 2.4rem;
-  width: 3.6rem;
-  float: left;
-  position: relative;
-  top: .3rem;
-}
-
-.info-social span {
-  display: inline-block;
-  border-bottom: 1px solid transparent;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.info-social a:hover span,
-.info-social:focus span {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
 
 .info-is-visible .s-info {
   visibility: visible;
@@ -527,6 +484,34 @@ a {
   transform: translateX(0);
   -webkit-transition: transform 0.5s cubic-bezier(0.82, 0.01, 0.77, 0.78);
   transition: transform 0.5s cubic-bezier(0.82, 0.01, 0.77, 0.78);
+}
+
+.mobile-menu{
+  width: 100%; display: block                        
+}
+
+.mobile-menu nav{
+  font-weight: bolder;
+  width: 100%;
+   display: grid;
+  grid-auto-rows: minmax(50px,auto);
+  grid-template-columns: repeat(auto-fit,minmax(10em,1fr));
+  justify-items: center;
+  grid-gap: 2em
+}
+.social-links{
+  margin-top: 3rem;
+  display: flex;
+   gap: 2em;
+    justify-content: center;
+}
+.social-links a {
+    color: #FFFFFF;
+    border-bottom: 1px solid transparent;
+    background: var(--brand-color);
+    padding: 10px;
+    -webkit-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
 }
 
 
@@ -660,9 +645,7 @@ a {
     left: 40px;
   } */
 
-  .s-info h1 {
-    font-size: 5.4rem;
-  }
+ 
 
 }
 
@@ -677,13 +660,6 @@ a {
   .s-info h1 {
     font-size: 4.8rem;
   }
-
-  .info-social li {
-    width: 100%;
-  }
-
-
-
 }
 
 @media only screen and (min-width:1000px) {
@@ -695,19 +671,9 @@ a {
 
 @media only screen and (max-width:950px) {
   .info-wrapper {
-    max-width: 700px;
+    max-width: 900px;
   }
 
-  .info-main,
-  .info-contact {
-    width: 100%;
-    float: none;
-    clear: both;
-  }
-
-  .info-social li {
-    width: 33.33333%;
-  }
 
 }
 
@@ -723,16 +689,6 @@ a {
 
 }
 
-@media only screen and (max-width:500px) {
-  .s-info h1 {
-    font-size: 3.8rem;
-  }
-
-  .info-social li {
-    width: 50%;
-  }
-
-}
 
 @media only screen and (max-width:400px) {
   .info-toggle {
@@ -743,17 +699,6 @@ a {
     display: none;
   }
 
-  .s-info h1 {
-    font-size: 3.5rem;
-  }
-
-  .info-social li {
-    width: auto;
-  }
-
-  .info-social span {
-    display: none;
-  }
 
 }
 

@@ -1,11 +1,12 @@
 import Link from "next/link"
 import { useRouter } from "next/router";
 
-export const MobileMenu = () => {
+export const MobileMenu = ({toggleMenu}: any) => {
 
     const route = useRouter();
     
     const appLinks = [
+        {name: 'home', url: '/'},
         {name: 'about', url: '/about'},
         {name: 'services', url: '/services'},
         {name: 'contact', url: '/contact'},
@@ -15,37 +16,37 @@ export const MobileMenu = () => {
     return (
         <div className="s-info">
 
-        <div className="row info-wrapper">
-
-     
-
-            <nav  className="" style={{display: 'flex', flexDirection: 'column'}}>
+        <div className="info-wrapper">
+    {/* display: grid;
+    grid-gap: 2em;
+    grid-auto-rows: minmax(50px,auto);
+    grid-template-columns: repeat(auto-fit,minmax(10em,1fr));
+    justify-items: center; */}
+            <div className="mobile-menu">
+                         <nav  className="" >
                 {appLinks.map(navLink => (
                     // <a key={navLink.name} href={navLink.url}>
                     //                  {navLink.name.toUpperCase()}
                     // </a>
-                    <Link    className={`
-                        ${navLink.url == route.pathname ? 'active' : '' }`} key={navLink.name} href={navLink.url}>
+                    <Link    
+                        className={`
+                        ${navLink.url == route.pathname ? 'active' : '' }`} 
+                        key={navLink.name} 
+                        href={navLink.url}
+                        onClick={() => toggleMenu()}
+                    >
                             {navLink.name.toUpperCase()}
                     </Link>
                 ))}
             </nav>
-            <div className="col-seven tab-full info-main">
 
-                    
-                <h1>We are Penuma Outsourcing. The Home of sterling Human Resource.</h1>
-                <p>
-                Our website might currenlty be under consultion but we are actively 
-                offering our services to our clients. 
-                Kindly reach out to us via email or phone, our agents are on 
-                standby to attend to you. 
-                We would love to hear from you. 
-                </p>
-
-
+            <div className="social-links">
+                <a href="#" target='_blank' rel="noreferrer">LN</a>
+                <a href="#" target='_blank' rel="noreferrer">FB</a>
+                <a href="#" target='_blank' rel="noreferrer">TW</a>
+                <a href="mailto:support@pneumaoutsourcing.com" target='_blank' rel="noreferrer">EM</a>
             </div>
-
-            <div className="col-four tab-full pull-right info-contact">
+            <div className="info-contact" style={{display: 'grid', margin: '10px auto', justifyItems: 'center'}}>
 
                 <div className="info-block">
                     <h3>Start A Conversation</h3>
@@ -67,36 +68,13 @@ export const MobileMenu = () => {
                         Nigeria
                     </p>
                 </div>
-
-                <div className="info-block">
-                    <h3>Find Us On</h3>
-                    
-                    <ul className="info-social">
-                        <li>
-                            <a href="#0"><i className="fab fa-facebook" aria-hidden="true"></i>
-                            <span>Facebook</span></a>
-                        </li>
-                        <li>
-                            <a href="#0"><i className="fab fa-twitter" aria-hidden="true"></i>
-                            <span>Twiiter</span></a>
-                        </li>
-                        <li>
-                            <a href="#0"><i className="fab fa-instagram" aria-hidden="true"></i>
-                            <span>Instagram</span></a>
-                        </li>
-                        <li>
-                            <a href="mailto:support@pneumaoutsourcing.com"><i className="fa fa-envelope" aria-hidden="true"></i>
-                            <span>Email</span></a>
-                        </li>
-                        <li>
-                            <a href="#0"><i className="fab fa-linkedin" aria-hidden="true"></i>
-                            <span>LinkedIn</span></a>
-                        </li>
-                    </ul>
-                </div>
                 
             </div>  
-             {/* end info contact  */}
+             {/* end info contact  */} 
+
+            </div>
+
+  
           
 
         </div> 
