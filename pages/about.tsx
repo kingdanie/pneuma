@@ -32,7 +32,7 @@ export default function About() {
               width: "400px",
               height: "400px",
             }}
-            src="/talent.jpeg"
+            src="/talent.jpg"
             alt="why us"
             width="auto"
             height="auto"

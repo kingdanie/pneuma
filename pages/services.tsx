@@ -27,7 +27,7 @@ export default function Services() {
               width: "400px",
               height: "400px",
             }}
-            src="/talent.jpeg"
+            src="/talent.jpg"
             alt="why us"
             width="auto"
             height="auto"

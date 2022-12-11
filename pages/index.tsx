@@ -135,7 +135,7 @@ export default function Home() {
                   width: "300px",
                   height: "300px",
                 }}
-                src="/talent.jpeg"
+                src="/talent.jpg"
                 alt="why us"
                 width="auto"
                 height="auto"
