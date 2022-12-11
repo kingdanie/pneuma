@@ -300,6 +300,10 @@ display: flex;
   min-height: 300px;
 }
 
+.image-container img {
+  object-fit: cover;
+}
+
 .contact-section img {
   
     object-fit: cover;
@@ -715,6 +719,7 @@ a {
 
   .image-container{
     border: none;
+    border-radius: none;
   }
 }
 

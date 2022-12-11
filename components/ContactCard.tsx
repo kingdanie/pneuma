@@ -20,7 +20,7 @@ export const ContactCard = () => {
         </div>
         <div
           className="image-container"
-          style={{ borderRadius: "50%" }}
+          
         >
           <img src="/hr.jpg" width="350px" height="350px" />
         </div>
