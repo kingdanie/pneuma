@@ -12,7 +12,7 @@ export default function ContactForm() {
     }
   return (
     <div>
-      <form onSubmit={HandleSubmit}>
+      <form className="contact-form" onSubmit={HandleSubmit}>
         <div className="form-grid">
         <div className="first-form-col" style={{display: 'flex'}}>
           <div>
@@ -53,8 +53,8 @@ export default function ContactForm() {
             </textarea>
         </div>
         </div>
-        <div>
-          <button>Submit</button>
+        <div className="form-button">
+          <button>Submit Message</button>
         </div>
       </form>
     </div>
