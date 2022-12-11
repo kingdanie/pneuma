@@ -21,7 +21,7 @@ export  const Layout = ({ children }: { children: React.ReactNode }) => {
           {children}
         </main>
         <Footer />
-        <MobileMenu />
+        <MobileMenu toggleMenu={toggleMenu} />
         </div>
     )
 }
