@@ -123,7 +123,7 @@ export default function Home() {
             Talent management is the process of identifying, developing, 
             and retaining top employees to drive business forward. 
             Our talent management solutions include acquisition, training, 
-            performance management, and succession planning. 
+            performance management, and succession planning.  <br />
             <Link href={'/contact'}> Contact us to learn more</Link>.
             </p>
           </div>
@@ -165,7 +165,7 @@ export default function Home() {
             With business consultancy, we provide expert advice and assistance to businesses 
             in order to help them improve operations and achieve goals. 
             Our experienced team offers a range of services and develops 
-            customized plans to meet your unique needs. 
+            customized plans to meet your unique needs.  <br />
             <Link href={'/contact'}> Schedule a consultation to learn more.</Link>
             </p>
           </div>
@@ -177,7 +177,7 @@ export default function Home() {
             HR outsourcing is a cost-effective way for businesses to 
             manage their human resources needs. 
             Our HR outsourcing services include payroll, 
-            benefits administration, employee relations, and compliance. 
+            benefits administration, employee relations, and compliance. <br />
             <Link href={'/services'}> Learn more or schedule a consultation.</Link>
             </p>
           </div>
@@ -219,7 +219,7 @@ export default function Home() {
             Coaching and training your staff is an important part of ensuring 
             their success and the success of your business. 
             Our services include leadership development, team building, 
-            and performance coaching. 
+            and performance coaching.  <br />
             <Link href={'/contact'}> Contact us to learn more and schedule a consultation.</Link>
             </p>
           </div>

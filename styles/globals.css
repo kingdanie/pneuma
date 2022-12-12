@@ -279,6 +279,10 @@ display: flex;
   -webkit-text-fill-color: transparent;
 }
 
+services-card a {
+  color: var(--brand-color);
+}
+
 .service-image img {
   object-fit: cover;
 }
@@ -821,6 +825,10 @@ a {
     background-clip: text;
     -webkit-background-clip: text;
   }
+
+  .services-card a {
+    color: var(--brand-color);
+}
 
   .card-icons{
     background-color: var(--brand-color);

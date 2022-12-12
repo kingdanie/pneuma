@@ -37,6 +37,7 @@ export default function Services() {
       <section className="Width-1040">
         <section>
           <h3 className="colored-text">Business Consultancy</h3>
+          <p>
           business consultancy is a company that provides
           expert advice and assistance to businesses in
           order to help them improve their operations and
@@ -59,11 +60,14 @@ export default function Services() {
           profitability, or improve your operations, our
           business consultancy services can help. Contact us
           today to learn more and schedule a consultation
+          </p>
+            
         </section>
 
         <section>
           <h3 className="colored-text">Talent management</h3>
-          HR outsourcing is a cost-effective way for
+          <p>
+            HR outsourcing is a cost-effective way for
           businesses to manage their human resources needs.
           By partnering with an HR outsourcing company,
           businesses can access a wide range of HR services
@@ -83,11 +87,13 @@ export default function Services() {
           employee satisfaction, or reduce HR costs, our HR
           outsourcing services can help. Contact us today to
           learn more and schedule a consultation.
+          </p>
         </section>
 
         <section>
           <h3 className="colored-text">Hr outsourcing </h3>
-          HR outsourcing is a cost-effective way for
+          <p>
+            HR outsourcing is a cost-effective way for
           businesses to manage their human resources needs.
           By partnering with an HR outsourcing company,
           businesses can access a wide range of HR services
@@ -107,10 +113,12 @@ export default function Services() {
           employee satisfaction, or reduce HR costs, our HR
           outsourcing services can help. Contact us today to
           learn more and schedule a consultation.
+          </p>
         </section>
 
         <section>
           <h3 className="colored-text">Coaching and training</h3>
+          <p>
           Coaching and training your staff is an important
           part of ensuring their success and the success of
           your business. By providing your employees with
@@ -130,6 +138,7 @@ export default function Services() {
           your leadership team, our coaching and training
           services can help. Contact us today to learn more
           and schedule a consultation.
+          </p>
         </section>
       </section>
       <ContactCard />
