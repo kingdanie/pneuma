@@ -29,9 +29,8 @@ export default function ContactForm() {
       })
         .then(result => {
           clearForm();
-          if (result.data.sent) {
-            setmailSent(result.data.sent)
-            setError(false)
+          if (result.status === 200) {
+            setmailSent(true)
           } else {
             setError(true)
           }
@@ -95,7 +94,7 @@ export default function ContactForm() {
           <button>Submit Message</button>
         </div>
         <div>
-              {mailSent && <div className="success">Thank you for contacting Us, we will get back to you shortly.</div>}
+              {mailSent && <div className="success">Thank you for contacting us, We will get back to you shortly.</div>}
               {error && <div className="error">Please fill the complete form</div>}
             </div>
       </form>
