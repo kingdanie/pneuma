@@ -1,4 +1,6 @@
 import { useState } from "react";
+import axios from 'axios';
+
 
 export default function ContactForm() {
 
@@ -7,8 +9,38 @@ export default function ContactForm() {
     const [mobile, setMobile] = useState('')
     const [message, setMessage] = useState('')
 
-    const HandleSubmit = () => {
-        console.log(`submitted ${name} ${email} ${mobile} ${message}`)
+    const API_PATH = 'https://dev.pneumaoutsourcing.com/api/index.php';
+  
+    const [] = useState()
+    const HandleSubmit = (e: any) => {
+      e.preventDefault();
+      const msg = {
+        name: name,
+        email: email,
+        mobile: mobile,
+        message: message,
+      }
+      axios({
+        method: 'post',
+        url: `${API_PATH}`,
+        headers: { 'content-type': 'application/json' },
+        data: msg
+      })
+        .then(result => {
+          clearForm();
+          alert('Message was sent')
+        })
+        .catch(error => alert({ error: error.message }));
+    };
+
+    // const HandleSubmit = () => {
+    //     console.log(`submitted ${name} ${email} ${mobile} ${message}`)
+    // }
+    const clearForm = () => {
+      setName(''),
+      setEmail(''),
+      setMobile(''),
+      setMessage('')
     }
   return (
     <div>
