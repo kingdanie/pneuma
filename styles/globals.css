@@ -385,6 +385,21 @@ button {
   margin-bottom: 1.5rem;
   color: var(--brand-color-dark);
 }
+
+.success  {
+  margin: 20px 0;
+  border: 1px solid green;
+  padding: 7px;
+  font-weight: bold;
+}
+
+.error {
+  margin: 20px 0;
+  border: 1px solid red;
+  padding: 7px;
+  font-weight: bold;
+}
+
 .subtitle::before {
   content: "";
     display: block;
