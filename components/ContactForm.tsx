@@ -3,7 +3,8 @@ import axios from 'axios';
 
 
 export default function ContactForm() {
-
+    const [mailSent, setmailSent] = useState(false);
+    const [error, setError] = useState(false);
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [mobile, setMobile] = useState('')
@@ -28,9 +29,14 @@ export default function ContactForm() {
       })
         .then(result => {
           clearForm();
-          alert('Message was sent')
+          if (result.data.sent) {
+            setmailSent(result.data.sent)
+            setError(false)
+          } else {
+            setError(true)
+          }
         })
-        .catch(error => alert({ error: error.message }));
+        .catch(error => setError( error.message ));
     };
 
     // const HandleSubmit = () => {
@@ -52,16 +58,16 @@ export default function ContactForm() {
                 type="text" 
                 placeholder="your name"
                 value={name}
-                onChange={(e) => setName(e.target.value)} 
+                onChange={(e) => setName(e.target.value.trim())} 
                 required
             />
           </div>
           <div>
             <input 
-                type="text" 
+                type="email" 
                 placeholder="your email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)} 
+                onChange={(e) => setEmail(e.target.value.trim())} 
                 required
             />
           </div>
@@ -70,7 +76,7 @@ export default function ContactForm() {
               type="mobile"
               placeholder="your mobile number"
               value={mobile}
-              onChange={(e) => setMobile(e.target.value)} 
+              onChange={(e) => setMobile(e.target.value.trim())} 
             />
           </div>
         </div>
@@ -79,7 +85,7 @@ export default function ContactForm() {
             className="form-textarea"
             name="mesage"
             value={message}
-            onChange={(e) => setMessage(e.target.value)} 
+            onChange={(e) => setMessage(e.target.value.trim())} 
             required
             >
             </textarea>
@@ -88,6 +94,10 @@ export default function ContactForm() {
         <div className="form-button">
           <button>Submit Message</button>
         </div>
+        <div>
+              {mailSent && <div className="success">Thank you for contacting Us, we will get back to you shortly.</div>}
+              {error && <div className="error">Please fill the complete form</div>}
+            </div>
       </form>
     </div>
   );
