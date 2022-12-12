@@ -124,7 +124,7 @@ export default function Home() {
             and retaining top employees to drive business forward. 
             Our talent management solutions include acquisition, training, 
             performance management, and succession planning. 
-            <Link href={'/contact'}>Contact us to learn more</Link>.
+            <Link href={'/contact'}> Contact us to learn more</Link>.
             </p>
           </div>
           <div>
@@ -166,7 +166,7 @@ export default function Home() {
             in order to help them improve operations and achieve goals. 
             Our experienced team offers a range of services and develops 
             customized plans to meet your unique needs. 
-            <Link href={'/contact'}>Schedule a consultation to learn more.</Link>
+            <Link href={'/contact'}> Schedule a consultation to learn more.</Link>
             </p>
           </div>
         </div>
@@ -178,7 +178,7 @@ export default function Home() {
             manage their human resources needs. 
             Our HR outsourcing services include payroll, 
             benefits administration, employee relations, and compliance. 
-            <Link href={'/services'}>Learn more or schedule a consultation.</Link>
+            <Link href={'/services'}> Learn more or schedule a consultation.</Link>
             </p>
           </div>
           <div>
@@ -220,7 +220,7 @@ export default function Home() {
             their success and the success of your business. 
             Our services include leadership development, team building, 
             and performance coaching. 
-            <Link href={'/contact'}>Contact us to learn more and schedule a consultation.</Link>
+            <Link href={'/contact'}> Contact us to learn more and schedule a consultation.</Link>
             </p>
           </div>
         </div>
