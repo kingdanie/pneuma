@@ -57,7 +57,7 @@ export default function Home() {
           >
             Schedule an appointment
           </button> */}
-          <Calendly />
+          <Calendly text="Schedule an appointment!"/>
         </div>
         <div className="hero-image">
           <img
