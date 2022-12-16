@@ -55,7 +55,7 @@ export default function ContactForm() {
           <div>
             <input 
                 type="text" 
-                placeholder="your name"
+                placeholder="Your Name"
                 value={name}
                 onChange={(e) => setName(e.target.value.trim())} 
                 required
@@ -64,7 +64,7 @@ export default function ContactForm() {
           <div>
             <input 
                 type="email" 
-                placeholder="your email"
+                placeholder="Your Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value.trim())} 
                 required
@@ -73,7 +73,7 @@ export default function ContactForm() {
           <div>
             <input
               type="mobile"
-              placeholder="your mobile number"
+              placeholder="Your Mobile Number"
               value={mobile}
               onChange={(e) => setMobile(e.target.value.trim())} 
             />
@@ -83,6 +83,7 @@ export default function ContactForm() {
           <textarea 
             className="form-textarea"
             name="mesage"
+            placeholder="What would you like to inquire?"
             value={message}
             onChange={(e) => setMessage(e.target.value.trim())} 
             required
