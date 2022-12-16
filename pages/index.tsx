@@ -39,7 +39,7 @@ export default function Home() {
           padding: 50,
         }}
       >
-        <div className="hero-info">
+        <div className="hero-info" id="scheduleBtn">
           <p className="subtitle">Pneuma Outsourcing ltd</p>
           <h1>
             Reliable Human Resource and Talent Management
@@ -81,36 +81,35 @@ export default function Home() {
       <section className="about-section Width-1040">
         <p className="subtitle">Introduction</p>
         <h2>
-          Pneuma is a leader in employment law for
-          employers, HR outsourcing support, and health and
-          safety consulting.
+          Welcome to Pneuma Outsourcing Ltd, the leader in Talent Management, Human Resource Outsourcing, 
+          and Business Consultancy.
         </h2>
 
         <div className="About-Cards">
           <div className="p-card">
             <div className="card-icons">
-              <img src="/compliance.svg" width="30px" />
+              <img src="/compliance.svg" width="30px" alt="business compliancy icon" />
             </div>
             Business compliancy
           </div>
 
           <div className="p-card">
             <div className="card-icons">
-              <img src="/productivity.svg" width="35px" />
+              <img src="/productivity.svg" width="35px" alt="increased  icon" />
             </div>
             Increased productivity
           </div>
 
           <div className="p-card">
             <div className="card-icons">
-              <img src="/time-is-money.svg" width="35px" />
+              <img src="/time-is-money.svg" width="35px" alt="save cost and time icon" />
             </div>
-            Increased productivity
+            Save Cost<br /> & Time
           </div>
 
           <div className="p-card">
             <div className="card-icons">
-              <img src="/financial.svg" width="35px" />
+              <img src="/financial.svg" width="35px" alt="financial security icon" />
             </div>
             Financial security
           </div>
@@ -121,9 +120,9 @@ export default function Home() {
       <section className="service-section Width-1040">
         <p className="subtitle">Services</p>
         <h2>
-          We have strategically positioned our services to
-          tackle the most challenging touch points businesses
-          facing . Here are a few of them:
+          We&apos;ve strategically talored our services to
+          tackle the most challenging touch points businesses face.
+          Here&apos;s a few of them:
         </h2>
         <div className="p-flex services-card">
           <div className="w-45">
@@ -133,7 +132,7 @@ export default function Home() {
             and retaining top employees to drive business forward. 
             Our talent management solutions include acquisition, training, 
             performance management, and succession planning.  <br />
-            <Link href={'/contact'}> Contact us to learn more</Link>.
+            <Link href={'/contact'}> Find out learn more</Link>.
             </p>
           </div>
           <div>
@@ -175,7 +174,7 @@ export default function Home() {
             in order to help them improve operations and achieve goals. 
             Our experienced team offers a range of services and develops 
             customized plans to meet your unique needs.  <br />
-            <Link href={'/contact'}> Schedule a consultation to learn more.</Link>
+            <Link href={'/contact'}> Learn more.</Link>
             </p>
           </div>
         </div>
@@ -187,7 +186,7 @@ export default function Home() {
             manage their human resources needs. 
             Our HR outsourcing services include payroll, 
             benefits administration, employee relations, and compliance. <br />
-            <Link href={'/services'}> Learn more or schedule a consultation.</Link>
+            <Link href={'/services'}> Learn more.</Link>
             </p>
           </div>
           <div>
@@ -229,7 +228,8 @@ export default function Home() {
             their success and the success of your business. 
             Our services include leadership development, team building, 
             and performance coaching.  <br />
-            <Link href={'/contact'}> Contact us to learn more and schedule a consultation.</Link>
+            <Link href={'/contact'}> Contact us to learn more or </Link>
+            <Link href={'#scheduleBtn'}> schedule a consultation.</Link>
             </p>
           </div>
         </div>
