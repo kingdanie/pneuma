@@ -38,7 +38,7 @@ export default function About() {
           towards improving your business.
         </p>
       </section>
-      <section className="Width-1040 ">
+      <section className="Width-1040" style={{marginTop: '-100px'}}>
       <ContactForm />
 
       </section>
