@@ -3,6 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { ContactCard } from "../components/ContactCard";
 import styles from "../styles/Home.module.css";
+import dynamic from "next/dynamic";
+
+const Calendly = dynamic(() => import("../components/CalendlyBtn"), {
+  ssr: false
+});
 
 export default function Home() {
   const pad = {
@@ -44,24 +49,28 @@ export default function Home() {
             decisions about their people so their businesses
             can thrive.{" "}
           </p>
-          <button
+          {/* <button
             style={{
               background: "#008aec",
               borderColor: "#008aec",
             }}
           >
             Schedule an appointment
-          </button>
+          </button> */}
+          <Calendly />
         </div>
         <div className="hero-image">
           <img
             style={{
               borderRadius: "50%",
               width: "400px",
+              minHeight: '250px',
               height: "400px",
+              objectFit: 'cover',
+    objectPosition: '10%'
             }}
-            src="/suit.jpeg"
-            alt="why us"
+            src="/outsourcing.jpeg"
+            alt="why pneumaoutsourcing"
             width="auto"
             height="auto"
           />
