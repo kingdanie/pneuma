@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { ContactCard } from "../components/ContactCard";
+import Link from "next/link";
+
 
 export default function About() {
   return (
@@ -64,9 +66,9 @@ export default function About() {
           Whether you&apos;re looking to streamline your HR
           processes, improve employee satisfaction, or
           reduce HR costs, our HR outsourcing services can
-          help. Contact us today to learn more and schedule
-          a consultation. We&apos;re ready to help your
-          business succeed.
+          help. Contact us today to learn more or <Link href={'/#scheduleBtn'}>Click here
+          to schedule a consultation.</Link> We&apos;re ready to
+          help your business succeed.
         </p>
       </section>
       <section className="Width-1040">
@@ -124,14 +126,19 @@ export default function About() {
       </section>
 
       <section className="about-section Width-1040">
-        <h2 className="colored-text" style={{marginBottom: '1em'}}>Take Action Now!</h2>
+        <h2
+          className="colored-text"
+          style={{ marginBottom: "1em" }}
+        >
+          Take Action Now!
+        </h2>
         <h3>
           Whether you&apos;re looking to streamline your HR
           processes, improve employee satisfaction, or
           reduce HR costs, our HR outsourcing services can
-          help. Contact us today to learn more and schedule
-          a consultation. We&apos;re ready to help your business
-          succeed.
+          help. Contact us today to learn more or <Link href={'/#scheduleBtn'}>Click here
+          to schedule a consultation.</Link> We&apos;re ready to help your
+          business succeed.
         </h3>
       </section>
 
