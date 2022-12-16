@@ -30,17 +30,24 @@ export default function About() {
           ready to assist you with all of your business
           needs. Whether you&apos;re looking for advice on
           strategic planning, help with market analysis, or
-          support with organizational development, we&apos;re
-          here to help. We offer a range of <Link href={'/services'}>services</Link> and
-          will work with you to develop a customized plan
-          that meets your unique needs. Contact us now to
-          schedule a consultation and take the first step
-          towards improving your business.
+          support with organizational development,
+          we&apos;re here to help. We offer a range of{" "}
+          <Link href={"/services"}>services</Link> and will
+          work with you to develop a customized plan that
+          meets your unique needs. Contact us now by filling
+          the form below or Take the first step towards
+          improving your business by{" "}
+          <Link href={"https://calendly.com/pneumaoutsourcing/30min"} target="_blank">
+            scheduling a consultation with one of our
+            consultants.
+          </Link>
         </p>
       </section>
-      <section className="Width-1040" style={{marginTop: '-100px'}}>
-      <ContactForm />
-
+      <section
+        className="Width-1040"
+        style={{ marginTop: "-100px" }}
+      >
+        <ContactForm />
       </section>
     </>
   );
