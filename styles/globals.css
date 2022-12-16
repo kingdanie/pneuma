@@ -420,8 +420,11 @@ button:hover {
   background-color: var(--brand-color-dark);
 }
 a {
-  color: inherit;
   text-decoration: none;
+  color: var(--brand-color);
+}
+a:hover{
+  text-decoration: underline;
 }
 
 
