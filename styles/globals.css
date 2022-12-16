@@ -741,6 +741,9 @@ a:hover{
     .info-toggle {
     display: none;
   }
+  .menu {
+   margin-bottom: 50px;
+  }
 
 }
 
