@@ -1,7 +1,11 @@
 import Head from "next/head";
 import { ContactCard } from "../components/ContactCard";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
+const CalendlyBtn = dynamic(() => import("../components/CalendlyBtn"), {
+  ssr: false
+});
 
 export default function About() {
   return (
@@ -15,7 +19,7 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="p-flex  Width-1040">
-        <div>
+        <div id="aboutScheduleBtn">
           <h1>
             We&apos;re transforming the future of
             recruitment acquisition and management.
@@ -24,7 +28,7 @@ export default function About() {
             Lets help you get the super team needed to take
             your business to the next level.
           </p>
-          <button>GET STARTED</button>
+          <CalendlyBtn text="GET STARTED" />
         </div>
 
         <div className="about-image">
@@ -66,7 +70,7 @@ export default function About() {
           Whether you&apos;re looking to streamline your HR
           processes, improve employee satisfaction, or
           reduce HR costs, our HR outsourcing services can
-          help. Contact us today to learn more or <Link href={'/#scheduleBtn'}>Click here
+          help. Contact us today to learn more or <Link href={'#aboutScheduleBtn'}>Click here
           to schedule a consultation.</Link> We&apos;re ready to
           help your business succeed.
         </p>
